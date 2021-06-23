@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #22244D;
+    color: white;
+    
+}
+
+.container {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 80%;
+    margin: 1 auto;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
