@@ -80,18 +80,18 @@ for (let i = 0; i < eleves.length; i++) {
 console.log('Les élèves suivants devront repasser leurs examens: ' + elevesRecales); */
 
 /* Fibonacci */
-let nombre = 9;
-
-let fibo = [0, 1];
-let somme = 1;
-if (nombre === 1) {
-    console.log(fibo);
-} else if (nombre > 1) {
-    for (let i = 0; i < nombre - 1; i++) {
-    somme += fibo[i];
-    fibo.push(somme);           
+function suiteFibonacci(nombre){
+    let fibo = [0, 1];
+    let somme = 1;
+    if (nombre === 1) {
+        console.log(fibo);
+    } else if (nombre > 1) {
+        for (let i = 0; i < nombre - 1; i++) {
+        somme += fibo[i];
+        fibo.push(somme);           
+        }
+        console.log(fibo);
+    } else {
+        console.log(0);
     }
-    console.log(fibo);
-} else {
-    console.log(0);
 }
