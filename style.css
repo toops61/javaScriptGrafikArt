@@ -24,3 +24,16 @@ main {
     width: 80%;
     margin: 1 auto;
 }
+
+h3, p {
+    margin-block-start: 1%;
+    margin-block-end: 1%;
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.red {
+    background-color: salmon;
+}
