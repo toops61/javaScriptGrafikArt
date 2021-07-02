@@ -37,3 +37,12 @@ h3, p {
 .red {
     background-color: salmon;
 }
+
+.green {
+    background-color: seagreen;
+}
+
+p {
+    transition: background-color 1s ease;
+}
+
