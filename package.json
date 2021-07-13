@@ -1,0 +1,20 @@
+{
+  "name": "grafikartjs",
+  "version": "1.0.0",
+  "description": "exercices Grafikart JS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toops61/javaScriptGrafikArt.git"
+  },
+  "author": "Toops61",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sass": "^1.35.2"
+  }
+}

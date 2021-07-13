@@ -1,0 +1,15 @@
+.spoiler-content {
+    display: none;
+    background-color: black;
+    color: white;
+}
+
+.spoiler-content.visible {
+    display: block;
+}
+
+.spoiler button {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: turquoise;
+}

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #676bc0;
+    color: white;
+    
+}
+
+.container {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header p {
+    background-color: teal;
+    border: solid white;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+main {
+    width: 80%;
+    margin: 1 auto;
+}
+
+h3, p {
+    margin-block-start: 1%;
+    margin-block-end: 1%;
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.red {
+    color: salmon;
+}
+
+.green {
+    background-color: seagreen;
+}
+
+p {
+    transition: background-color 1s ease;
+}
+
+.external {
+    color: white;
+}
+
+#form {
+    width: 20rem;
+    border: solid red;
+    box-shadow: 2px 2px 8px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form input, #form select {
+    width: 90%;
+    margin: .5rem;
+}
+
+.binaire {
+    margin: 1rem auto;
+}
