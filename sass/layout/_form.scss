@@ -1,0 +1,13 @@
+#form {
+    width: 20rem;
+    border: solid red;
+    box-shadow: 2px 2px 8px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form input, #form select {
+    width: 90%;
+    margin: .5rem;
+}
