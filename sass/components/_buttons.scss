@@ -2,9 +2,25 @@
     border-radius: 30px;   
     border: solid white;
     padding: .5rem;
+    margin: 1rem;
     background-color: turquoise;
+    transition: box-shadow 400ms ease-in, transform 400ms ease-in-out, background-color 4s ease-out, color 5s ease-in-out;
+    &:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 20px 5px black;
+        color: white;
+        background-color: teal;
+    }
+    &:active {
+        animation: jumpy 3s ease-in-out;
+    }
     &__large {
         padding: 1rem;
         background-color: teal;
+        box-shadow: 2px 2px 8px black;
+        transition: transform 500ms ease-in-out;
+        &:hover {
+            transform: scale(2) translate(4rem, 1rem) rotate(1turn);
+        }
     }
 }
