@@ -15,8 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #676bc0;
-  color: white;
+  background-color: #60d2d6;
 }
 
 main {
@@ -92,6 +91,16 @@ h3, p {
 header {
   width: 80%;
   display: flex;
+}
+
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+.tabs .active a {
+  color: #a32913;
 }
 
 #form {

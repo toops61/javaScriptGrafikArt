@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spoiler</title>
+    <title>Système d'onglets</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/spoiler.js" defer></script>
+    <script src="../js/TPonglets.js" defer></script>
 </head>
 <body>
     <header>
+        <div>
+            <ul class="tabs">
+                <li class="active">
+                    <a href="#home">Accueil</a>
+                </li>
+                <li>
+                    <a href="#mentions">Mentions</a>
+                </li>
+                <li>
+                    <a href="#about">A propos</a>
+                </li>
+            </ul>
+            <div class="tabs">
+                <div class="active tabs__content" id="home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ex facilis sint autem sed unde.</div>
+                <div class="tabs__content" id="mentions">Le deuxieme ipsum dolor sit amet consectetur adipisicing elit. Libero dignissimos commodi ullam officia consectetur alias, doloremque corrupti, delectus ad, quae doloribus illum sequi perspiciatis.</div>
+                <div class="tabs__content" id="about">Le troisième ipsum était encore plus gros, dolor sit, amet consectetur adipisicing elit. Eaque eius est nesciunt accusantium ipsa expedita aliquam quos temporibus reprehenderit voluptatem deleniti fugit exercitationem deserunt odit numquam optio rerum beatae magni, libero qui id excepturi nulla dolorem!</div>
+            </div>
+        </div>
     </header>
     <div class="container">
         <main>

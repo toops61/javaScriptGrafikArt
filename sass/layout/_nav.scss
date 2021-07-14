@@ -1,0 +1,11 @@
+.tabs {
+    &__content {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    .active a {
+        color: $third-color;
+    }
+}
