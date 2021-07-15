@@ -1,21 +1,37 @@
-let onglets = document.querySelectorAll('ul li');
-
+let onglets = document.querySelectorAll('ul li a');
+function ciblerOnglets(param) {
+    if (param.parentNode.classList.contains('active') === false){ 
+        document.querySelector('li.active').classList.remove('active');
+        document.querySelector('div.tabs__content.active').classList.remove('active');
+        param.parentNode.classList.add('active');
+        document.querySelector(param.getAttribute('href')).classList.add('active');
+        }
+}
 for (let i = 0; i < onglets.length; i++) {
     onglets[i].addEventListener('click', function () {
-        if (this.classList.contains('active') === false){
-        let ongletSelected = document.querySelector('li.active');
-        let paragraphSelected = document.querySelector('div.tabs__content.active');
-        ongletSelected.classList.remove('active');
-        paragraphSelected.classList.remove('active');
-        this.classList.add('active');
-        document.querySelectorAll('div.tabs div')[i].classList.add('active');
-        }
+        ciblerOnglets(this);
     })    
 }
+if (window.location.hash != 0) {
+    let urlHash = window.location.hash;
+    let target = "a[href='" + urlHash + "']";
+    let lienUrl = document.querySelector(target);
+    ciblerOnglets(lienUrl);
+}
 
-/* let urlHash = window.location.hash;
-let ongletUrl = document.querySelector(urlHash);
-if (ongletUrl === ongletSelected) {
-    ongletSelected.classList.remove('active');
-    paragraphSelected.classList.remove('active');
-} */
+//fonction arrowUp pour scroll top
+let arrow = document.getElementById('arrow-up');
+function arrowAppears() {
+    arrow.classList.add('appears');
+}
+function arrowUp() {
+    window.scroll(0,0);
+}
+window.addEventListener('scroll', function () {
+    if (this.scrollY > 150) {
+        arrowAppears();
+    } else {
+        arrow.classList.remove('appears');
+    }
+})
+arrow.addEventListener('click', arrowUp);

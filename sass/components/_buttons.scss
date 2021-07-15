@@ -24,3 +24,22 @@
         }
     }
 }
+
+.arrow-up {
+    display: none;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,.7);
+    &.appears {
+        @include flexCenter;
+    }
+    div {
+        color: white;
+        &::before {
+            @include icon('\f077');
+        }
+    }
+}
