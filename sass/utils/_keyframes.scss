@@ -12,3 +12,21 @@
         transform: translate(8rem,0);
     }
 }
+
+@keyframes clignote {
+    0%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
